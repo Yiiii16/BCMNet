@@ -45,14 +45,3 @@ class CBAM3D(nn.Module):
         x_out = self.spatial_attention(x_out) * x_out
         return x_out
 
-
-if __name__ == '__main__':
-    cbam_3d = CBAM3D(in_planes=64)
-
-    input_tensor_3d = torch.randn(1, 64, 16, 32, 32)  # Batch size = 1, Channels = 64, Depth = 16, Height = 32, Width = 32
-
-    print(f'输入的shape: {input_tensor_3d.shape}')
-
-    output_tensor_3d = cbam_3d(input_tensor_3d)
-
-    print(f'输出的shape: {output_tensor_3d.shape}')
