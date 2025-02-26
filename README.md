@@ -15,7 +15,7 @@ nnUNetv2_plan_and_preprocess -d DATASET_ID --verify_dataset_integrity
 ```
 ## Train
 ```bash
-nnUNetv2_train DATASET_ID 2d all -tr nnUNetTrainerbcmnet
+nnUNetv2_train DATASET_ID 3d_fullres all -tr nnUNetTrainerbcmnet
 ```
 ## Inference
 - Predict testing cases with `bcmnet` model
