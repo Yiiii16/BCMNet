@@ -1,27 +1,26 @@
-# BCMNet
-## Requirements:
-1.python 3.10 + torch 2.0.1 +torchvision 0.15.2
+Download dataset
+Please organize the dataset as follows:
 
-2.Install [Mamba](https://github.com/state-spaces/mamba) :`pip install causal-conv1d` and `pip install mamba-ssm` 
-
-3.Download code: `git clone https://github.com/Yiiii16/BCMNet.git` 
-
-4.`cd BCMNet/bcmnet` and run `pip install -e .`
-
-
-## Preprocessing
-```bash
-nnUNetv2_plan_and_preprocess -d DATASET_ID --verify_dataset_integrity
-```
-## Train
-```bash
-nnUNetv2_train DATASET_ID 3d_fullres all -tr nnUNetTrainerbcmnet
-```
-## Inference
-- Predict testing cases with `bcmnet` model
-
-```bash
-nnUNetv2_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -d DATASET_ID -c 3d_fullres -f all -tr nnUNetTrainerbcmnet --disable_tta
-```
-## Acknowledgements
-Thanks a lot to the authors of [nnU-Net](https://github.com/MIC-DKFZ/nnUNet) , [Mamba](https://github.com/state-spaces/mamba) and [U-mamba](https://github.com/bowang-lab/U-Mamba) for making their code publicly available.
+data/
+├── nnUNet_raw/
+│   ├── Dataset701_AbdomenCT/
+│   │   ├── imagesTr
+│   │   │   ├── FLARE22_Tr_0001_0000.nii.gz
+│   │   │   ├── FLARE22_Tr_0002_0000.nii.gz
+│   │   │   ├── ...
+│   │   ├── labelsTr
+│   │   │   ├── FLARE22_Tr_0001.nii.gz
+│   │   │   ├── FLARE22_Tr_0002.nii.gz
+│   │   │   ├── ...
+│   │   ├── dataset.json
+│   ├── Dataset702_AbdomenMR/
+│   │   ├── imagesTr
+│   │   │   ├── amos_0507_0000.nii.gz
+│   │   │   ├── amos_0508_0000.nii.gz
+│   │   │   ├── ...
+│   │   ├── labelsTr
+│   │   │   ├── amos_0507.nii.gz
+│   │   │   ├── amos_0508.nii.gz
+│   │   │   ├── ...
+│   │   ├── dataset.json
+│   ├── ...
