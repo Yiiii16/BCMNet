@@ -6,6 +6,7 @@
 <li>Download code: `git clone https://github.com/Yiiii16/BCMNet.git`</li>
 <li>`cd BCMNet/bcmnet` and run `pip install -e .`</li>
 </ol>
+
 ## Preprocessing
 ```bash
 nnUNetv2_plan_and_preprocess -d DATASET_ID --verify_dataset_integrity
