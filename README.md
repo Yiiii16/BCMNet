@@ -1,6 +1,6 @@
 # BCMNet
-## Requirements:
 Repository for the paper “A Dual-Branch Network for Simultaneous Liverand Tumor Segmentation Based on Mamba andBoundary-Aware Module”
+## Requirements:
 1.python 3.10 + torch 2.0.1 +torchvision 0.15.2
 
 2.Install [Mamba](https://github.com/state-spaces/mamba) :`pip install causal-conv1d` and `pip install mamba-ssm` 
