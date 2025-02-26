@@ -24,5 +24,3 @@ nnUNetv2_train DATASET_ID 3d_fullres all -tr nnUNetTrainerbcmnet
 ```bash
 nnUNetv2_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -d DATASET_ID -c 3d_fullres -f all -tr nnUNetTrainerbcmnet --disable_tta
 ```
-
->>>>>>> Save local changes
