@@ -1,6 +1,6 @@
 Download dataset
 Please organize the dataset as follows:
-
+```bash
 data/
 ├── nnUNet_raw/
 │   ├── Dataset701_AbdomenCT/
@@ -24,3 +24,4 @@ data/
 │   │   │   ├── ...
 │   │   ├── dataset.json
 │   ├── ...
+```
